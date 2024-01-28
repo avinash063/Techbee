@@ -1,0 +1,61 @@
+﻿@page
+@model Techbee.Pages.TechbeeData.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TechbeeDetail</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TechbeeDetail.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TechbeeDetail.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TechbeeDetail.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TechbeeDetail.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TechbeeDetail.Email_Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TechbeeDetail.Email_Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TechbeeDetail.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TechbeeDetail.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TechbeeDetail.Location)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TechbeeDetail.Location)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TechbeeDetail.DOJ)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TechbeeDetail.DOJ)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TechbeeDetail.Role)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TechbeeDetail.Role)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.TechbeeDetail?.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
